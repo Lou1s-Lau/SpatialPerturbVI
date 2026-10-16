@@ -1,0 +1,36 @@
+{
+  "data": {
+    "perturbation_key": "perturbation",
+    "control_label": "Control",
+    "x_key": "X",
+    "y_key": "Y",
+    "section_key": null,
+    "layer": null,
+    "min_cells": 50,
+    "always_keep": ["MAP3K7", "TRADD"]
+  },
+  "model": {
+    "likelihood": "zinb",
+    "n_hidden": 128,
+    "n_background_latent": 15,
+    "n_salient_latent": 48,
+    "n_layers": 2,
+    "kl_z_weight": 1.0,
+    "kl_s_weight": 1.0,
+    "kl_y_weight": 1.0,
+    "free_bits_z": 0.0,
+    "cls_weight": 6.0,
+    "adv_weight": 5.0,
+    "mmd_weight": 1.0,
+    "spatial_attract_weight": 8.0,
+    "spatial_repulse_weight": 0.5,
+    "spatial_knn_k": 8,
+    "pairs_within_section": false
+  },
+  "train": {
+    "max_epochs": 300,
+    "batch_size": 2048,
+    "lr": 0.002,
+    "kl_warmup_steps": 120
+  }
+}

@@ -1,0 +1,8 @@
+scvi-tools==1.4.0
+torch>=2.1
+lightning>=2.1
+anndata>=0.10
+scanpy>=1.10
+numpy
+pandas
+scipy
