@@ -1,30 +1,24 @@
 {
   "data": {
-    "perturbation_key": "perturbation",
+    "labels_key": "perturbation",
     "control_label": "Neg",
-    "x_key": "X",
-    "y_key": "Y",
+    "layer": "counts",
     "section_key": null,
-    "layer": null,
     "min_cells": 50
   },
   "model": {
-    "likelihood": "zinb",
     "n_hidden": 128,
     "n_background_latent": 15,
     "n_salient_latent": 30,
     "n_layers": 2,
-    "kl_z_weight": 1.0,
-    "kl_s_weight": 0.5,
+    "mmd_penalty": 1.0,
+    "adv_penalty": 5.0,
+    "cls_penalty": 6.0,
     "kl_y_weight": 1.0,
-    "free_bits_z": 0.0,
-    "cls_weight": 6.0,
-    "adv_weight": 5.0,
-    "mmd_weight": 1.0,
-    "spatial_attract_weight": 8.0,
-    "spatial_repulse_weight": 0.5,
-    "spatial_knn_k": 8,
-    "pairs_within_section": false
+    "kl_s_weight": 0.5,
+    "spatial_contrastive_weight": 8.0,
+    "spatial_repulsive_weight": 0.5,
+    "spatial_knn_k": 8
   },
   "train": {
     "max_epochs": 1600,
