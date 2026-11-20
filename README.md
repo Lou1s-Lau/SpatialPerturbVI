@@ -92,7 +92,7 @@ The datasets are available from the original studies. The selection of cells, ge
 
 ## Citation
 
-Yusen Liu, Rui Wang and Hao Chen. SpatialPerturbVI: disentangling perturbation effects from tissue context in spatially resolved CRISPR screens.
+Yusen Liu, Sourav Medya and Hao Chen. SpatialPerturbVI: disentangling perturbation effects from tissue context in spatially resolved CRISPR screens.
 
 ## License
 
